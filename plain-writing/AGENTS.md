@@ -1,4 +1,4 @@
-## Writing
+# Writing
 
 Read docs/writing.md before writing code, comments, commits, PRs, docs or
 replies. The core rules, in case you read nothing else:

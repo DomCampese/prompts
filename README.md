@@ -13,8 +13,9 @@ agent that reads `AGENTS.md`. Claude Code and other tools that read
 Using `plain-writing` as the example:
 
 1. Copy `writing.md` and `patterns.md` into the repository's `docs/`.
-2. Paste the contents of `AGENTS-block.md` into the repository's `AGENTS.md`.
-   It carries the core rules and points to `docs/writing.md`.
+2. Copy `AGENTS.md` to the repository root as is. If the repository already
+   has an `AGENTS.md`, paste this one's contents into it instead. It carries
+   the core rules and points to `docs/writing.md`.
 3. For Claude Code, add a `CLAUDE.md` containing:
 
    ```
