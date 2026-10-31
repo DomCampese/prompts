@@ -132,9 +132,9 @@ reason.
 ## Behaviour-preserving changes
 
 If a change is meant to leave behaviour the same, prove it with the cheapest
-proof that works: identical output from the same inputs, identical build output for code
-that only moved, before/after captures, then the test suite. State which
-proofs you ran in the commit message.
+proof that works: identical output from the same inputs, identical build
+output for code that only moved, before/after captures, then the test suite.
+State which proofs you ran in the commit message.
 
 ## Check before sending
 
