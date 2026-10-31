@@ -1,12 +1,13 @@
 # prompts
 
-Instructions for coding agents. Each folder holds one `AGENTS.md`.
+Instructions for coding agents. Each folder holds one `AGENTS.md` or one
+skill (`SKILL.md`).
 
 | Folder | Contents |
 |---|---|
 | [agent-conventions](agent-conventions/AGENTS.md) | Rules for plain replies, code, comments, commits, PRs and docs. |
 
-## Use one in a repository
+## Use an AGENTS.md
 
 1. Copy the folder's `AGENTS.md` to the repository root. If the repository
    already has an `AGENTS.md`, append this one to it.
@@ -14,6 +15,12 @@ Instructions for coding agents. Each folder holds one `AGENTS.md`.
    containing `@AGENTS.md`.
 
 Where the repository's own conventions differ, they take precedence.
+
+## Use a skill
+
+Copy the skill's folder into a skills directory: `.claude/skills/` in a
+repository, or `~/.claude/skills/` for all projects. Other agents that support
+`SKILL.md` have their own skills directory.
 
 ## License
 
