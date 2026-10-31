@@ -41,15 +41,21 @@ conventions differ, follow the repository.
 
 ## Comments
 
-- A comment states a constraint or a reason the code cannot show. It does not
-  restate the code.
-- Lead with the rule. If a plausible edit would break it, add the symptom in
-  one clause: "Must match `PANEL_HALF`, or the highlight is the wrong size."
-- One to three lines is normal. Put long history in the commit message.
+- Most code needs no comment. Add one only where the code does not make its
+  purpose obvious.
+- One line. Two at most.
+- Above a function or file, say what it does or returns, and any behavior a
+  caller would not guess:
+  `/* Returns whether this is a mobile device. Updates when the screen resizes. */`
+- Above a line whose purpose is not obvious, say what it is for:
+  `// Updates the notch color to match the new background color.`
+- If an edit would break something non-obvious, say what:
+  `// Must match PANEL_HALF, or the highlight is the wrong size.`
+- Put history and reasoning in the commit message.
 - No jokes, no first person, no "we", no addressing the reader.
 
 Bad: `// The heart of the system: where requests find their home.`
-Good: `// Routes requests by path prefix; first match wins.`
+Good: `// Routes requests by path prefix. The first match wins.`
 
 ## Commits, PRs and docs
 
