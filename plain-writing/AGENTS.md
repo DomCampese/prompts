@@ -13,8 +13,8 @@ replies. The core rules, in case you read nothing else:
   it's worth noting, here's the thing*.
 - No inflated words: *leverage, robust, seamless, comprehensive, delve,
   utilize*.
-- Use "not X, but Y" only when the reader would likely assume X. Otherwise
-  state Y.
+- No "not X, but Y". State Y. A plain negative is fine: "The cache does not
+  persist across restarts."
 - Name the actor. Code, data and decisions do not act on their own.
 - Be specific. Name the implication instead of calling it significant.
 - No selling. Say what changed, how it was verified and what to check.

@@ -61,8 +61,8 @@ Replace with the specific reason, implication or stake, or delete.
 
 ## Binary contrasts
 
-These are overused for drama. Keep a contrast only when it corrects an
-assumption the reader would likely make.
+Cut the pivot from X to Y and state Y. A plain negative statement is fine:
+"The cache does not persist across restarts."
 
 | Pattern | Fix |
 |---|---|
