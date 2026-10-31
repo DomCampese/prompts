@@ -64,7 +64,22 @@ conventions differ, follow the repository.
   punctuation.
 - Put history and reasoning that needs more space in the commit message.
 - No first person, no "we", no addressing the reader.
-- Do not write jokes. Leave existing ones written by people in place.
+- Jokes are rare: most codebases should have a handful at most. When one
+  fits, it is appreciated. It adds to a fact the comment already states:
+  - A yes or no to the question the reader will ask, with the reason:
+    `// No, this can't be a Set. Order matters for the undo stack.`
+  - Understatement after a fact:
+    `// The cache is eventually consistent. Eventually.`
+  - A well-known reference that explains the idea:
+    `// Schrödinger's flag: unset until the first read, so check before using it.`
+- In names, a metaphor is fine if it still says what the thing does
+  (`Janitor` for a class that deletes temp files). No slang, memes or
+  references in names (`yeet`, `bobbyTables`, `theAnswer`).
+- No memes ("one does not simply"), no snark at vendors, browsers, specs or
+  people ("thanks, IE", "blame the spec"). State the behavior instead:
+  `// Every browser does this differently. This handles Chrome, Firefox and Safari.`
+- A joke never replaces the reason. No "here be dragons", "it works, don't
+  ask", or "don't touch this" without saying why.
 
 ## Commits, PRs and docs
 
