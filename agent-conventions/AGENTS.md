@@ -75,9 +75,12 @@ conventions differ, follow the repository.
 - In names, a metaphor is fine if it still says what the thing does
   (`Janitor` for a class that deletes temp files). No slang, memes or
   references in names (`yeet`, `bobbyTables`, `theAnswer`).
-- No memes ("one does not simply"), no snark at vendors, browsers, specs or
-  people ("thanks, IE", "blame the spec"). State the behavior instead:
-  `// Every browser does this differently. This handles Chrome, Firefox and Safari.`
+- Snark at vendors, browsers and specs is fine when it comes with the
+  behavior:
+  `// The vendor's docs are fiction. In practice it returns 404 for an empty list.`
+  "Thanks, IE" alone says nothing. No snark at people, including
+  coworkers and past authors of the code.
+- No memes ("one does not simply").
 - A joke never replaces the reason. No "here be dragons", "it works, don't
   ask", or "don't touch this" without saying why.
 
