@@ -15,22 +15,16 @@ own conventions take precedence where they differ.
 
 ### Option 1: your harness
 
-Clone this repository once. `git pull` then updates every harness that
-points at it.
+Add the file to your harness's global instructions. Keeping a clone of this
+repository and importing or linking the file from it means `git pull` updates
+it.
 
-```sh
-git clone https://github.com/DomCampese/prompts ~/prompts
-```
-
-| Harness | Setup |
-|---|---|
-| Claude Code | Add `@~/prompts/agent-conventions/AGENTS.md` to `~/.claude/CLAUDE.md`. |
-| Codex | `ln -s ~/prompts/agent-conventions/AGENTS.md ~/.codex/AGENTS.md` |
-| Gemini CLI | `ln -s ~/prompts/agent-conventions/AGENTS.md ~/.gemini/GEMINI.md` |
-| Cursor | Paste the file into User Rules in settings. It does not read a global file. |
-
-If one of those global files already exists, add a line or paste the
-contents into it instead of replacing it.
+| Harness | Global instructions | Docs |
+|---|---|---|
+| Claude Code | `~/.claude/CLAUDE.md` | [Memory](https://code.claude.com/docs/en/memory) |
+| Codex | `~/.codex/AGENTS.md` | [AGENTS.md](https://developers.openai.com/codex/guides/agents-md) |
+| Gemini CLI | `~/.gemini/GEMINI.md` | [GEMINI.md](https://geminicli.com/docs/cli/gemini-md) |
+| Cursor | User Rules | [Rules](https://cursor.com/docs/context/rules) |
 
 ### Option 2: a repository
 
