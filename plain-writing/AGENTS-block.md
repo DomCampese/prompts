@@ -19,4 +19,9 @@ replies. The core rules, in case you read nothing else:
 - No selling. Say what changed, how it was verified and what to check.
 - A comment states a reason the code cannot show. It does not restate the
   code.
+- No slick lines. Write a full sentence a newcomer can parse: "Press B while
+  facing a ledge to climb onto it", not "B at a ledge lets you mantle".
+- No pain verbs (*bites, stings, burns*), teasers (*the catch:*), wry asides
+  or one-liners built to be quoted. State the fact.
+- Real engineering terms are fine. Do not invent names for things.
 - No em dashes. Use a full stop, a comma or a colon.

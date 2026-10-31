@@ -63,6 +63,14 @@ parameters and units. Describe a feature by what the user can do.
 - No selling: a PR or reply says what changed, how it was verified and what to
   check, not why it is exciting.
 - A README describes features plainly. It is documentation, not a trailer.
+- Real engineering terms are fine: *race condition, idempotent, footgun,
+  blast radius, happy path*. Invented terms are not. Do not coin a name for a
+  problem ("the dual-source problem") and then use it as if the reader knows
+  it. Describe the problem.
+- Write full sentences a newcomer can parse: subject, verb, condition,
+  result. Do not compress a sentence into a slick line that drops articles
+  and leans on an unusual verb. "B at a ledge lets you mantle" becomes
+  "Press B while facing a ledge to climb onto it."
 
 Bad: `// The heart of the system: where requests find their home.`
 Good: `// Routes requests by path prefix; first match wins.`
@@ -94,6 +102,19 @@ These read as filler or as generated text. The full lists, with fixes, are in
 - Paragraphs that end on a quotable one-liner. If it sounds like a pull-quote,
   rewrite it.
 - Emphasis markup (bold, capitals) inside code comments.
+- Pain verbs for problems: *bites, stings, burns, trips you up, gets you*
+  ("here's the part that bites"). State the failure and when it happens.
+- Polished one-liners: mirrored sentences ("cheap to add, expensive to
+  remove"), clever disguises ("a cache bug wearing a network costume"),
+  "X is doing a lot of work here". Say the fact the line hints at.
+- Colon reveals and teasers: *the catch:, the fix:, the upshot:, short
+  version:, there's a catch*. Give the catch or the fix.
+- Wry asides: *(ask me how I know), which is a polite way of saying,
+  spoiler:, for some definition of*.
+- Drama adverbs on mechanisms: *quietly, silently, sneakily*. Say what the
+  code does: "catches the error and returns `[]` without logging".
+- Sincerity markers: *the honest answer is, to be candid, to be fair*.
+- Business nouns: *the ask, the unlock, the win, the learnings, the play*.
 - Em dashes. Use a full stop, a comma or a colon.
 
 ## Commit messages
@@ -124,4 +145,6 @@ proofs you ran in the commit message.
 - Any thing doing a human verb? Name who does it.
 - Any vague claim of importance? Name the specific thing or cut it.
 - Any em dash? Replace it.
+- Any line that sounds clever? Rewrite it as the plain fact.
+- Any term you made up? Replace it with a description.
 - Anything that can be deleted without losing information? Delete it.

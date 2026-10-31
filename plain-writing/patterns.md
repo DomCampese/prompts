@@ -103,6 +103,61 @@ Inanimate things do not act. Name the actor.
 | "It is believed that" | Say who believes it |
 | "The file was updated" | "I updated the file" (in a reply) |
 
+## Pain verbs
+
+Problems do not bite, sting or burn. State the failure and the condition.
+
+| Pattern | Fix |
+|---|---|
+| "Here's the part that bites" | "This fails when..." |
+| "This will sting on large repos" | "Clones over 2 GB time out." |
+| "We got burned by the cache" | "A stale cache entry served old prices for 3 hours." |
+| "The gotcha is ordering" | "Migrations must run before seeds, or seeding fails on missing tables." |
+
+## Compressed, slick sentences
+
+Lines that drop articles and context and lean on an unusual verb to sound
+sharp. Write the full sentence.
+
+| Pattern | Fix |
+|---|---|
+| "B at a ledge lets you mantle." | "Press B while facing a ledge to climb onto it." |
+| "Stale lockfile, cold cache, red build." | "The build fails because the cache holds a stale lockfile." |
+| "Retries paper over the 503s." | "The client retries 503 responses, so they never reach the logs." |
+| "One flag gates the whole path." | "`ENABLE_SYNC` turns the sync code on or off." |
+
+## Polished one-liners
+
+| Pattern | Fix |
+|---|---|
+| "Cheap to add, expensive to remove." | "Removing it later means migrating every stored record." |
+| "The code is fine. The contract isn't." | "The function matches its docs, but callers pass `null`, which the docs forbid." |
+| "Treat X as the source and Y as the packaging." | "Edit X. Y only points to it." |
+| "A cache bug wearing a network costume." | "The timeout comes from a stale cache entry, not the network." |
+| "That 'usually' is doing a lot of work." | "It fails when the file is over 2 MB." |
+
+## Invented terms
+
+Real engineering vocabulary is fine. A name coined for this conversation is
+not, because the reader has to work out what it means.
+
+| Pattern | Fix |
+|---|---|
+| "This is the classic dual-source problem." | "The rules live in two files, so they will drift apart." |
+| "Call it a two-hop include." | "`CLAUDE.md` imports `AGENTS.md`, which links to `docs/writing.md`." |
+| "That's config drift tax." | "Every copy has to be updated by hand." |
+
+## Teasers, asides and drama adverbs
+
+| Pattern | Fix |
+|---|---|
+| "There's a catch." / "The fix: one line." | State the catch or the fix. |
+| "Tests pass, for some definition of pass." | "Tests pass because three are skipped." |
+| "(ask me how I know)" | Delete. |
+| "This quietly breaks on Windows." | "Paths use `/`, so it fails on Windows." |
+| "The honest answer is no." | "No." |
+| "The big unlock is caching." | "Caching cuts load time from 3 s to 0.4 s." |
+
 ## Before and after
 
 > Before: "Great question! Here's the thing: the build isn't failing because of
