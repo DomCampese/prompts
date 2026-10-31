@@ -63,7 +63,8 @@ conventions differ, follow the repository.
 - One line, rarely more than two. Match the file's existing case and
   punctuation.
 - Put history and reasoning that needs more space in the commit message.
-- No jokes, no first person, no "we", no addressing the reader.
+- No first person, no "we", no addressing the reader.
+- Do not write jokes. Leave existing ones written by people in place.
 
 ## Commits, PRs and docs
 
