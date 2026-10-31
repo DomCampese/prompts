@@ -2,6 +2,9 @@
 
 These rules apply to any assistant or agent working in the repository.
 
+Prefer clear, easy-to-understand signal over fluff. The other rules here
+follow from this one. When none of them covers a case, apply this one.
+
 Write plainly and briefly, for someone reading the code later. Apply this to
 everything you touch, and to your replies.
 

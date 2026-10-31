@@ -1,7 +1,12 @@
 # Writing
 
 Read docs/writing.md before writing code, comments, commits, PRs, docs or
-replies. The core rules, in case you read nothing else:
+replies.
+
+Prefer clear, easy-to-understand signal over fluff. The other rules here
+follow from this one. When none of them covers a case, apply this one.
+
+The core rules, in case you read nothing else:
 
 - Answer first. Then give only the detail needed to act on it.
 - Report what was done and how it was checked. Say plainly what failed or was
