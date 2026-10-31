@@ -9,12 +9,37 @@ skill (`SKILL.md`).
 
 ## Use an AGENTS.md
 
+Install it once in your agent harness, so it applies to every project, or
+copy it into a repository, so everyone working there gets it. A repository's
+own conventions take precedence where they differ.
+
+### Option 1: your harness
+
+Clone this repository once. `git pull` then updates every harness that
+points at it.
+
+```sh
+git clone https://github.com/DomCampese/prompts ~/prompts
+```
+
+| Harness | Setup |
+|---|---|
+| Claude Code | Add `@~/prompts/agent-conventions/AGENTS.md` to `~/.claude/CLAUDE.md`. |
+| Codex | `ln -s ~/prompts/agent-conventions/AGENTS.md ~/.codex/AGENTS.md` |
+| Gemini CLI | `ln -s ~/prompts/agent-conventions/AGENTS.md ~/.gemini/GEMINI.md` |
+| Cursor | Paste the file into User Rules in settings. It does not read a global file. |
+
+If one of those global files already exists, add a line or paste the
+contents into it instead of replacing it.
+
+### Option 2: a repository
+
+Use this when collaborators' agents should follow the conventions too.
+
 1. Copy the folder's `AGENTS.md` to the repository root. If the repository
    already has an `AGENTS.md`, append this one to it.
 2. For Claude Code, which reads `CLAUDE.md`, add a `CLAUDE.md` at the root
    containing `@AGENTS.md`.
-
-Where the repository's own conventions differ, they take precedence.
 
 ## Use a skill
 
