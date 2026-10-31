@@ -24,6 +24,13 @@ Claude Code reads `AGENTS.md` from version 2.1.277 when the repository has no
 `CLAUDE.md`. The agent needs web access to fetch the file. Without it, copy the
 file into the repository instead.
 
+## Stable paths
+
+Repositories fetch these files by URL, so each path on `main` is a public
+API. A path is not renamed, moved or deleted without a file left at the old
+path that points to the new one, and the known consumers updated. The rules
+for agents editing this repository are in [AGENTS.md](AGENTS.md).
+
 ## Use a skill
 
 Copy the skill's folder into a skills directory: `.claude/skills/` in a
