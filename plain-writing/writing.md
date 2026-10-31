@@ -92,7 +92,9 @@ These read as filler or as generated text. The full lists, with fixes, are in
   facilitate, comprehensive, delve, navigate, unpack, landscape, deep dive,
   game-changer, ensure that* (write "so" or "to").
 - Binary contrasts: "not X, but Y"; "X isn't the problem, Y is"; "not just X
-  but also Y". State Y.
+  but also Y". State Y. Saying what something is not is fine when it
+  corrects an assumption the reader would likely make: "The timeout is per
+  request, not per session." It is a problem when used for rhythm or drama.
 - Negative listing: "Not X. Not Y. Z." State Z.
 - Dramatic fragments: "Speed. Quality. Cost. That's it." Write a sentence.
 - Rhetorical setups: "What if...?", "Think about it:", a question answered in
@@ -140,7 +142,7 @@ State which proofs you ran in the commit message.
 
 - Does the first sentence answer the question or state the result?
 - Any word from the cut lists? Remove it.
-- Any "not X, but Y"? State Y.
+- Any "not X, but Y"? Keep it only if it corrects a likely assumption.
 - Any thing doing a human verb? Name who does it.
 - Any vague claim of importance? Name the specific thing or cut it.
 - Any em dash? Replace it.

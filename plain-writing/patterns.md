@@ -61,6 +61,9 @@ Replace with the specific reason, implication or stake, or delete.
 
 ## Binary contrasts
 
+These are overused for drama. Keep a contrast only when it corrects an
+assumption the reader would likely make.
+
 | Pattern | Fix |
 |---|---|
 | "Not because X. Because Y." | "Because Y." |
