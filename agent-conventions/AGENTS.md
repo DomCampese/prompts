@@ -163,6 +163,8 @@ quoted. Write the fact they hint at.
 | "That 'usually' is doing a lot of work." | "It fails when the file is over 2 MB." |
 | "Retries paper over the 503s." | "The client retries 503 responses, so they never reach the logs." |
 | "A style-only diff across untouched code hides the change that matters." | "Mixing format changes with code changes makes the code changes harder to review." |
+| "The existing golden trace still replays exactly, including the chase, so the moved code works as before." | "The chase code moved into a new function. A recorded run that includes a chase gives the same state on every frame as before the move." |
+| "The golden replay test passes which includes the chase, so the code I moved works." | "The chase code moved into a new function. A recorded run that includes a chase gives the same state on every frame as before the move." |
 
 **Pain verbs.** *Bites, stings, burns, trips you up.* State the failure and
 when it happens. "This will sting on large repos" becomes "Clones over 2 GB
