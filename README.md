@@ -1,47 +1,22 @@
 # prompts
 
-Instructions for coding agents. Each folder is one entry and works with any
-agent that reads `AGENTS.md`. Claude Code and other tools that read
-`SKILL.md` can also load it as a skill.
+Instructions for coding agents. Each folder holds one `AGENTS.md`.
 
-| Entry | What it does |
+| Folder | Contents |
 |---|---|
-| [plain-writing](plain-writing/) | Plain, brief code, comments, commits, PRs, docs and replies. |
+| [style-guide](style-guide/AGENTS.md) | Rules for plain replies, code, comments, commits, PRs and docs. |
 
-## Use an entry in a repository
+## Use one in a repository
 
-Using `plain-writing` as the example:
+1. Copy the folder's `AGENTS.md` to the repository root. If the repository
+   already has an `AGENTS.md`, append this one to it.
+2. For Claude Code, which reads `CLAUDE.md`, add a `CLAUDE.md` at the root
+   containing `@AGENTS.md`.
 
-1. Copy `writing.md` and `patterns.md` into the repository's `docs/`.
-2. Copy `AGENTS.md` to the repository root as is. If the repository already
-   has an `AGENTS.md`, paste this one's contents into it instead. It contains
-   the core rules and points to `docs/writing.md`.
-3. For Claude Code, add a `CLAUDE.md` containing:
+Where the repository's own conventions differ, they take precedence.
 
-   ```
-   @AGENTS.md
-   @docs/writing.md
-   ```
+## License
 
-   `@` inlines the file at load time. Other tools follow the link in
-   `AGENTS.md` instead, so the core rules are written out there in case the
-   link is not read.
-
-## Install as a skill
-
-Copy the folder into a skills directory:
-
-```sh
-git clone https://github.com/DomCampese/prompts
-cp -r prompts/plain-writing ~/.claude/skills/          # all projects
-cp -r prompts/plain-writing your-repo/.claude/skills/  # one repository
-```
-
-A skill loads only when the agent decides a task matches its description.
-For rules that should always apply, use the `AGENTS.md` route above.
-
-## Licence
-
-Unlicense, except where an entry's `NOTICE` says otherwise.
-`plain-writing` includes material from
-[stop-slop](https://github.com/hardikpandya/stop-slop) (MIT).
+Unlicense, except the parts of `style-guide/AGENTS.md` adapted from
+[stop-slop](https://github.com/hardikpandya/stop-slop), which are MIT. The MIT
+notice is at the end of that file, so it travels with it.
