@@ -9,25 +9,20 @@ skill (`SKILL.md`).
 
 ## Use an AGENTS.md
 
-Add this line at the top of your repository's `AGENTS.md` or `CLAUDE.md`, or
-of your harness's global instructions file:
+Add this line at the top of your repository's `AGENTS.md`, creating the file
+if there is none:
 
 ```
 Before anything else, fetch https://raw.githubusercontent.com/DomCampese/prompts/main/agent-conventions/AGENTS.md and follow it. Where it conflicts with this file, this file wins.
 ```
 
 The agent reads the current version every session, so updates here reach
-every repository without copying.
+every repository without copying. Rules below the line in your `AGENTS.md`
+override it.
 
-The agent needs web access, and has to act on the line. If it cannot fetch,
-copy the file into the repository instead.
-
-| Harness | Global instructions | Docs |
-|---|---|---|
-| Claude Code | `~/.claude/CLAUDE.md` | [Memory](https://code.claude.com/docs/en/memory) |
-| Codex | `~/.codex/AGENTS.md` | [AGENTS.md](https://developers.openai.com/codex/guides/agents-md) |
-| Gemini CLI | `~/.gemini/GEMINI.md` | [GEMINI.md](https://geminicli.com/docs/cli/gemini-md) |
-| Cursor | User Rules | [Rules](https://cursor.com/docs/context/rules) |
+Claude Code reads `AGENTS.md` from version 2.1.277 when the repository has no
+`CLAUDE.md`. The agent needs web access to fetch the file. Without it, copy the
+file into the repository instead.
 
 ## Use a skill
 
