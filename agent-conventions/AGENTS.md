@@ -42,18 +42,23 @@ conventions differ, follow the repository.
 ## Comments
 
 - Assume the reader understands code. Do not explain what code does.
-- Comment only where something is non-obvious, and say why:
+- Comment only where something is non-obvious, and say why. Non-obvious
+  includes domain knowledge: formulas, protocol rules, values from a spec. For example:
   `// Safari ignores the CSS value, so set the meta tag directly.`
 - Warn about a footgun only when an edit would break something the code does
   not show. This should be rare:
   `// Must match PANEL_HALF, or the highlight is the wrong size.`
-- Workaround notes are fine. Say what is being worked around:
-  `// Works around Safari not firing resize on rotation.`
+- Workaround notes are fine. Say what is being worked around, and link the
+  bug report if there is one, so the workaround can be removed once it is
+  fixed:
+  `// Works around Safari not firing resize on rotation: https://bugs.webkit.org/...`
 - Doc comments (`@param`, `@returns`) only on code that is called from many
   places or by other teams, such as a shared utility or a library API. Not on
   code with one or two callers.
-- No TODOs, no section dividers.
-- One line. Two at most. Match the file's existing case and punctuation.
+- No TODOs, no section dividers. Report known gaps in the PR description or
+  an issue.
+- One line, rarely more than two. Match the file's existing case and
+  punctuation.
 - Put history and reasoning that needs more space in the commit message.
 - No jokes, no first person, no "we", no addressing the reader.
 
