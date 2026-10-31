@@ -43,13 +43,14 @@ conventions differ, follow the repository.
 
 - Assume the reader understands code. Do not explain what code does.
 - Comment only where something is non-obvious, and say why. Non-obvious
-  includes domain knowledge: formulas, protocol rules, values from a spec. For example:
+  includes domain knowledge: formulas, protocol rules, values defined by a
+  technical standard such as an RFC or a file format. For example:
   `// Safari ignores the CSS value, so set the meta tag directly.`
 - Warn about a footgun only when an edit would break something the code does
   not show. This should be rare:
   `// Must match PANEL_HALF, or the highlight is the wrong size.`
 - Workaround notes are fine. Say what is being worked around, and link the
-  bug report if there is one, so the workaround can be removed once it is
+  upstream bug report (browser, library, OS) if there is one, so the workaround can be removed once it is
   fixed:
   `// Works around Safari not firing resize on rotation: https://bugs.webkit.org/...`
 - Doc comments (`@param`, `@returns`) only on code that is called from many
@@ -57,6 +58,8 @@ conventions differ, follow the repository.
   code with one or two callers.
 - No TODOs, no section dividers. Report known gaps in the PR description or
   an issue.
+- No ticket numbers, acceptance criteria or requirement IDs. Those belong in
+  the commit message or PR.
 - One line, rarely more than two. Match the file's existing case and
   punctuation.
 - Put history and reasoning that needs more space in the commit message.
