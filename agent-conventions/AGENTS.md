@@ -1,4 +1,4 @@
-# Style guide
+# Agent conventions
 
 Prefer clear, easy-to-understand signal over fluff. The other rules here
 follow from this one. When none of them covers a case, apply this one.

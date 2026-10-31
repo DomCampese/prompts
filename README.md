@@ -4,7 +4,7 @@ Instructions for coding agents. Each folder holds one `AGENTS.md`.
 
 | Folder | Contents |
 |---|---|
-| [style-guide](style-guide/AGENTS.md) | Rules for plain replies, code, comments, commits, PRs and docs. |
+| [agent-conventions](agent-conventions/AGENTS.md) | Rules for plain replies, code, comments, commits, PRs and docs. |
 
 ## Use one in a repository
 
@@ -17,6 +17,6 @@ Where the repository's own conventions differ, they take precedence.
 
 ## License
 
-Unlicense, except the parts of `style-guide/AGENTS.md` adapted from
+Unlicense, except the parts of `agent-conventions/AGENTS.md` adapted from
 [stop-slop](https://github.com/hardikpandya/stop-slop), which are MIT. The MIT
 notice is at the end of that file, so it travels with it.
