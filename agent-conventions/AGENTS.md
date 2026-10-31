@@ -49,7 +49,9 @@ conventions differ, follow the repository.
   `// Must match PANEL_HALF, or the highlight is the wrong size.`
 - Workaround notes are fine. Say what is being worked around:
   `// Works around Safari not firing resize on rotation.`
-- No TODOs, no docblocks (`@param`, `@returns`), no section dividers.
+- Doc comments (`@param`, `@returns`) only on public library or API code that
+  other people will call often. Not on internal code.
+- No TODOs, no section dividers.
 - One line. Two at most. Match the file's existing case and punctuation.
 - Put history and reasoning that needs more space in the commit message.
 - No jokes, no first person, no "we", no addressing the reader.
