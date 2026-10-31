@@ -89,7 +89,7 @@ These read as filler or as generated text. The full lists, with fixes, are in
   mind, the key insight, in other words, as we'll see, in this section*.
 - Emphasis crutches: *full stop, let that sink in, make no mistake, this
   matters because*.
-- Inflated vocabulary and jargon: *leverage, robust, seamless, utilize,
+- Inflated vocabulary and business jargon: *leverage, robust, seamless, utilize,
   facilitate, comprehensive, delve, navigate, unpack, landscape, deep dive,
   game-changer, ensure that* (write "so" or "to").
 - Binary contrasts: "not X, but Y"; "X isn't the problem, Y is"; "not just X

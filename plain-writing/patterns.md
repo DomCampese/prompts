@@ -1,6 +1,6 @@
 # Patterns to cut
 
-Fuller lists for the rules in SKILL.md. Adapted in part from
+Fuller lists for the rules in writing.md. Adapted in part from
 [stop-slop](https://github.com/hardikpandya/stop-slop) by Hardik Pandya
 (MIT).
 
@@ -42,7 +42,7 @@ State the content without them.
 
 Replace with the specific reason, implication or stake, or delete.
 
-## Jargon
+## Business jargon
 
 | Avoid | Use |
 |---|---|
