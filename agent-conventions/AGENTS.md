@@ -41,21 +41,18 @@ conventions differ, follow the repository.
 
 ## Comments
 
-- Most code needs no comment. Add one only where the code does not make its
-  purpose obvious.
-- One line. Two at most.
-- Above a function or file, say what it does or returns, and any behavior a
-  caller would not guess:
-  `/* Returns whether this is a mobile device. Updates when the screen resizes. */`
-- Above a line whose purpose is not obvious, say what it is for:
-  `// Updates the notch color to match the new background color.`
-- If an edit would break something non-obvious, say what:
+- Assume the reader understands code. Do not explain what code does.
+- Comment only where something is non-obvious, and say why:
+  `// Safari ignores the CSS value, so set the meta tag directly.`
+- Warn about a footgun only when an edit would break something the code does
+  not show. This should be rare:
   `// Must match PANEL_HALF, or the highlight is the wrong size.`
-- Put history and reasoning in the commit message.
+- Workaround notes are fine. Say what is being worked around:
+  `// Works around Safari not firing resize on rotation.`
+- No TODOs, no docblocks (`@param`, `@returns`), no section dividers.
+- One line. Two at most. Match the file's existing case and punctuation.
+- Put history and reasoning that needs more space in the commit message.
 - No jokes, no first person, no "we", no addressing the reader.
-
-Bad: `// The heart of the system: where requests find their home.`
-Good: `// Routes requests by path prefix. The first match wins.`
 
 ## Commits, PRs and docs
 
