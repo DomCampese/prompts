@@ -6,8 +6,8 @@ Write the way a careful engineer who owns the codebase would: plainly,
 briefly, and for the next reader. Apply this to everything you touch, and to
 your replies.
 
-Do not reformat files you are not otherwise changing. A style-only diff across
-untouched code hides the change that matters.
+Do not reformat files you are not otherwise changing. Making format changes
+only obfuscates actual code changes.
 
 ## Replies to the user
 

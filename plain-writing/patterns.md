@@ -124,6 +124,7 @@ sharp. Write the full sentence.
 | "B at a ledge lets you mantle." | "Press B while facing a ledge to climb onto it." |
 | "Stale lockfile, cold cache, red build." | "The build fails because the cache holds a stale lockfile." |
 | "Retries paper over the 503s." | "The client retries 503 responses, so they never reach the logs." |
+| "A style-only diff across untouched code hides the change that matters." | "Making format changes only obfuscates actual code changes." |
 | "One flag gates the whole path." | "`ENABLE_SYNC` turns the sync code on or off." |
 
 ## Polished one-liners
