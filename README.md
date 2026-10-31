@@ -6,7 +6,7 @@ agent that reads `AGENTS.md`. Claude Code and other tools that read
 
 | Entry | What it does |
 |---|---|
-| [plain-writing](plain-writing/) | Plain, brief code, comments, commits, PRs, docs and replies. No filler, no hype, answer first. |
+| [plain-writing](plain-writing/) | Plain, brief code, comments, commits, PRs, docs and replies. |
 
 ## Use an entry in a repository
 
@@ -14,7 +14,7 @@ Using `plain-writing` as the example:
 
 1. Copy `writing.md` and `patterns.md` into the repository's `docs/`.
 2. Copy `AGENTS.md` to the repository root as is. If the repository already
-   has an `AGENTS.md`, paste this one's contents into it instead. It carries
+   has an `AGENTS.md`, paste this one's contents into it instead. It contains
    the core rules and points to `docs/writing.md`.
 3. For Claude Code, add a `CLAUDE.md` containing:
 

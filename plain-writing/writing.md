@@ -2,9 +2,8 @@
 
 These rules apply to any assistant or agent working in the repository.
 
-Write the way a careful engineer who owns the codebase would: plainly,
-briefly, and for the next reader. Apply this to everything you touch, and to
-your replies.
+Write plainly and briefly, for someone reading the code later. Apply this to
+everything you touch, and to your replies.
 
 Do not reformat files you are not otherwise changing. Making format changes
 only obfuscates actual code changes.
@@ -19,7 +18,7 @@ only obfuscates actual code changes.
 - No praise of the question or idea. No closing offer of more help.
 - No announcing what you are about to do ("Let me walk you through...",
   "Here's what I found:"). Do it.
-- Trust the reader. Skip reassurance ("And that's okay"), softening and
+- Skip reassurance ("And that's okay"), softening and
   hand-holding.
 
 ## Code
@@ -27,12 +26,12 @@ only obfuscates actual code changes.
 - A name says what the thing is, with units where it helps (`timeoutMs`,
   `widthPx`, `rows`). Short names are fine when they are local and
   conventional in that code.
-- One function, one job. If a block needs a comment to say what it does, it
-  usually wants to be a function with that name.
+- Each function does one thing. If a block needs a comment to say what it
+  does, move it into a function with that name.
 - No dead code, no commented-out code, no unused parameters kept "for later".
-- A number that means something gets a name. A number used in two places gets
+- Give a meaningful number a named constant. A number used in two places gets
   one definition that both read.
-- Prefer data over branches: a table of per-case values beats a chain of `if`s.
+- Prefer a table of per-case values to a chain of `if`s.
 - Respect the project's existing layering and conventions.
 
 ## Comments
@@ -45,10 +44,10 @@ only obfuscates actual code changes.
 - No jokes or scene-setting in code.
 - No first person, no "we", no addressing the reader.
 
-## Register
+## Tone
 
 Code, comments, docs, commit messages, PR descriptions and replies are
-technical writing, not marketing copy. Say what the code does, with its
+technical writing. Say what the code does, with its
 parameters and units. Describe a feature by what the user can do.
 
 - No figurative or atmospheric language.
@@ -62,7 +61,7 @@ parameters and units. Describe a feature by what the user can do.
   they are literally true.
 - No selling: a PR or reply says what changed, how it was verified and what to
   check, not why it is exciting.
-- A README describes features plainly. It is documentation, not a trailer.
+- A README describes features plainly.
 - Real engineering terms are fine: *race condition, idempotent, footgun,
   blast radius, happy path*. Invented terms are not. Do not coin a name for a
   problem ("the dual-source problem") and then use it as if the reader knows
@@ -132,8 +131,8 @@ reason.
 
 ## Behaviour-preserving changes
 
-A refactor claims to change nothing. Prove it with the cheapest proof that
-works: identical output from the same inputs, identical build output for code
+If a change is meant to leave behaviour the same, prove it with the cheapest
+proof that works: identical output from the same inputs, identical build output for code
 that only moved, before/after captures, then the test suite. State which
 proofs you ran in the commit message.
 
