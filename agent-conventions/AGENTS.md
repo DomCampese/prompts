@@ -77,7 +77,7 @@ conventions differ, follow the repository.
   references in names (`yeet`, `bobbyTables`, `theAnswer`).
 - Snark at vendors, browsers and specs is fine when it comes with the
   behavior:
-  `// The vendor's docs are fiction. In practice it returns 404 for an empty list.`
+  `// The vendor's docs are wrong. In practice it returns 404 for an empty list.`
   "Thanks, IE" alone says nothing. No snark at people, including
   coworkers and past authors of the code.
 - No memes ("one does not simply").
